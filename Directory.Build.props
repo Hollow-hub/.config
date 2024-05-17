@@ -11,7 +11,7 @@
     <!-- Suppresses display of the sign-on banner -->
     <NoLogo>true</NoLogo>
     <!-- Prepend organization name to default namespace -->
-    <RootNamespace>Kritikos.$(MSBuildProjectName)</RootNamespace>
+    <RootNamespace>Hollow.$(MSBuildProjectName)</RootNamespace>
     <!-- Enable global usings based on project type -->
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Generate documentation file and ignore warnings for undocumented elements -->
@@ -164,10 +164,10 @@
 
   <PropertyGroup Label="Package">
     <PackageId>$(RootNamespace)</PackageId>
-    <Company>Kritikos IO</Company>
-    <Authors>Alexandros Kritikos</Authors>
+    <Company>Hollow</Company>
+    <Authors>Stefanos Katsikas</Authors>
     <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
-    <Copyright>Copyright © 2017-$(CurrentYear) Kritikos IO. All rights reserved.</Copyright>
+    <Copyright>Copyright © 2024-$(CurrentYear) Hollow. All rights reserved.</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageOutputPath>$(MSBuildThisFileDirectory)/packages</PackageOutputPath>
     <PublishDir>$(MSBuildThisFileDirectory)/upload/$(ProjectName)</PublishDir>
@@ -221,10 +221,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup Label="SourceLink" Condition="$(IsPackable) == 'true'">
-    <SourceLinkGiteaHost Include="git.kritikos.io" />
   </ItemGroup>
 
 </Project>

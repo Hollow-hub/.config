@@ -4,6 +4,6 @@
   </ImportGroup>
 
   <PropertyGroup Label="Package">
-    <PackageProjectUrl>https://github.com/kritikos-io/.config</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Hollow-hub/.config</PackageProjectUrl>
   </PropertyGroup>
 </Project>
